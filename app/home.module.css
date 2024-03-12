@@ -1,0 +1,20 @@
+@keyframes moveUpDown {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(30px);
+    }
+  }
+  
+  .animacion {
+    animation: moveUpDown 2s infinite;
+  }
+
+@media (max-width: 420px) {
+  .animacion {
+    width: 150px;
+    height: 150px;
+  }
+}
+
