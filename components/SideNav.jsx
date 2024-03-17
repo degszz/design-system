@@ -14,6 +14,14 @@ export default function Navigation() {
             route: '/component/acordion',
         },
         {
+            label: 'Button',
+            route: '/component/button',
+        },
+        {
+            label: 'Card',
+            route: '/component/card',
+        },
+        {
             label: 'Form',
             route: '/component/form',
         },

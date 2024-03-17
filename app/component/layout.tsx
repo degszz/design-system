@@ -8,7 +8,7 @@ export default function Layout(
             <div >
                 <SideNav />
             </div>
-            <div className='flex-grow w-full'>
+            <div className='w-full'>
                 {children}
             </div>
         </div>

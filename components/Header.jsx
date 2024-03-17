@@ -16,13 +16,10 @@ export default function Header() {
 
     const links = [
         {
-            label: 'Introduction',
-            route: '/dashboard',
-        },
-        {
             label: 'Home',
             route: '/',
-        }, {
+        }, 
+        {
             label: 'Contact',
             route: '/dashboard/contact',
         },
@@ -35,6 +32,14 @@ export default function Header() {
         {
             label: 'Acordion',
             route: '/component/acordion',
+        },
+        {
+            label: 'Button',
+            route: '/component/button',
+        },
+        {
+            label: 'Card',
+            route: '/component/card',
         },
         {
             label: 'Form',
