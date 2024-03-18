@@ -4,32 +4,32 @@ import { RobotoN, RobotoMono } from "../components/ui/fonts"
 
 export default function Navigation() {
 
-    const links = [
-        {
+    const links = {
+        Introduction: {
             label: 'Introduction',
             route: '/component',
         },
-        {
+        Acordion: {
             label: 'Acordion',
             route: '/component/acordion',
         },
-        {
+        Button: {
             label: 'Button',
             route: '/component/button',
         },
-        {
+        Card: {
             label: 'Card',
             route: '/component/card',
         },
-        {
+        Form: {
             label: 'Form',
             route: '/component/form',
         },
-        {
+        Ttoggle: {
             label: 'ThemeToggle',
             route: '/component/Ttoggle',
         },
-    ]
+    }
 
     return (
         <nav className='mt-12 h-full'>
@@ -39,13 +39,44 @@ export default function Navigation() {
                         <h3 className={`${RobotoN.className} antialiased`}>
                             Components
                         </h3>
-                        {links.map(({ label, route }) =>
-                            <div className="flex w-fit items-center pl-1">
-                                <Link className='focus:underline focus:text-black-950 dark:focus:text-white p-1 w-fit cursor-pointer text-black-300 hover:underline hover:text-black-950 dark:hover:text-white' href={route}>
-                                    {label}
-                                </Link>
-                            </div>
-                        )}
+                        <div className="flex flex-col w-fit pl-1">
+                            <Link
+                                className='focus:underline focus:text-black-950 dark:focus:text-white p-1 w-fit cursor-pointer text-black-300 hover:underline hover:text-black-950 dark:hover:text-white'
+                                href={links.Introduction.route}
+                            >
+                                {links.Introduction.label}
+                            </Link>
+                            <Link
+                                className='focus:underline focus:text-black-950 dark:focus:text-white p-1 w-fit cursor-pointer text-black-300 hover:underline hover:text-black-950 dark:hover:text-white'
+                                href={links.Acordion.route}
+                            >
+                                {links.Acordion.label}
+                            </Link>
+                            <Link
+                                className='focus:underline focus:text-black-950 dark:focus:text-white p-1 w-fit cursor-pointer text-black-300 hover:underline hover:text-black-950 dark:hover:text-white'
+                                href={links.Button.route}
+                            >
+                                {links.Button.label}
+                            </Link>
+                            <Link
+                                className='focus:underline focus:text-black-950 dark:focus:text-white p-1 w-fit cursor-pointer text-black-300 hover:underline hover:text-black-950 dark:hover:text-white'
+                                href={links.Card.route}
+                            >
+                                {links.Card.label}
+                            </Link>
+                            <Link
+                                className='focus:underline focus:text-black-950 dark:focus:text-white p-1 w-fit cursor-pointer text-black-300 hover:underline hover:text-black-950 dark:hover:text-white'
+                                href={links.Form.route}
+                            >
+                                {links.Form.label}
+                            </Link>
+                            <Link
+                                className='focus:underline focus:text-black-950 dark:focus:text-white p-1 w-fit cursor-pointer text-black-300 hover:underline hover:text-black-950 dark:hover:text-white'
+                                href={links.Ttoggle.route}
+                            >
+                                {links.Ttoggle.label}
+                            </Link>
+                        </div>
                     </ul>
                 </nav>
             </div>
